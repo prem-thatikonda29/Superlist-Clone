@@ -63,9 +63,10 @@ header{
 }
 
 .navbar-info{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     align-self: center;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 
 .navbar-img{
@@ -74,4 +75,27 @@ header{
 
 .navbar-img img{
     width: 9em;
+}
+
+.navbar-heading{
+    font-size: 3em;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.navbar-div{
+    display: inline;
+    color: var(--white);
+    background-color: var(--tomato);
+    font-size: 50px;
+    padding: 10px 15px;
+    margin-right: 10px;
+    margin-top: -20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.navbar-span{
+    color: var(--tomato);
 }
