@@ -19,6 +19,11 @@ body{
     background-color: var(--white2);
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+}
+
 .orange-navbar{
     height: 15px;
     background-color: var(--tomato);
@@ -30,6 +35,7 @@ body{
     margin-right: 50px;
     font-family: sans-serif;
     font-weight: bold;
+    align-self: flex-end;
 }
 
 .navbar-buttons a:link{
@@ -56,3 +62,16 @@ body{
     color: var(--dark-grey);
 }
 
+.navbar-info{
+    display: inline-block;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.navbar-img{
+    align-self: center;
+}
+
+.navbar-img img{
+    width: 9em;
+}
