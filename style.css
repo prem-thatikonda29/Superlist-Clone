@@ -5,6 +5,7 @@
 }
 
 :root{
+    --bg: #f5ecf9;
     --tomato: #f84f39;
     --white: #fff;
     --white2: ##FAFAFF;
@@ -19,7 +20,7 @@
 /*-----------------HEADER SECTION--------------- */
 
 body{
-    background-color: var(--white2);
+    background-color: var(--bg);
 }
 
 header{
@@ -140,4 +141,113 @@ header{
 .link-3:hover{
     border: 2px solid var(--green);
     color: var(--green);
+}
+
+/* ---------------MAIN SECTION---------------*/
+main{
+    height: 700px;
+    background-color: var(--bg);
+    /* width: 90%; */
+    margin: 100px 100px 0 100px;
+    display: flex;
+    border-radius: 35px;
+    border: 1.5px solid var(--light-grey);
+}
+
+.main-1{
+    width: 20%;
+    background-color: var(--grey);
+    margin: 15px 5px 15px 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-2{
+    width: 50%;
+    background-color: var(--grey);
+    border-radius: 20px;
+    margin: 15px 5px;
+}
+
+.main-3{
+    width: 30%;
+    background-color: var(--grey);
+    border-radius: 20px;
+    margin: 15px 10px 15px 5px;
+}
+
+/* --------------STYLING INDIVIDUAL SECTION------------ */
+.main-1.window{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+    gap: 10px;
+    height: 200px;
+    width: 90%;
+    margin: 25px 15px;
+
+}
+
+.window-item{
+    border-radius: 16px;
+    padding: 5px;
+    background-color: var(--bg);
+}
+
+.main-1.list{
+    height: 400px;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.main-1.list p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.main-1.list .item{
+    height: 35px;
+    margin: 0;
+    width: 100%;
+}
+
+.main-1.list .item:hover{
+    cursor: pointer;
+    background-color: var(--bg);
+}
+
+.main-1.last{
+    height: 100px;
+    width: 90%;
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-1.last-1{
+    background-color: var(--bg);
+    height: 50px;
+    width:50%;
+    margin-left: 10px;
+    border-radius: 40px;
+}
+
+.main-1.last-2{
+    width: 30%;
+    height: 50px;
+}
+
+.main-1.last-2 img{
+    background-position: center;
+}
+
+.main-3{
+    background-image: url(assets/kitchen.jpg);
+    background-position: center;
 }
