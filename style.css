@@ -10,6 +10,9 @@
     --white2: ##FAFAFF;
     --grey: #E9ECEF;
     --dark-grey: #343A40;
+    --light-grey: #9999A1;
+    --blue: #4895EF;
+    --green: #38B000;
 
 }
 
@@ -98,4 +101,43 @@ header{
 
 .navbar-span{
     color: var(--tomato);
+}
+
+.navbar-menu{
+    align-self: center;
+    margin-top: 35px;
+}
+
+.navbar-menu ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    color: var(--light-grey);
+}
+
+.navbar-menu ul li a{
+    border: 2px solid var(--grey);
+    padding: 12px;
+    border-radius: 35px;
+    color: var(--dark-grey);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.link-1:hover{
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+.link-2:hover{
+    border: 2px solid var(--tomato);
+    color: var(--tomato);
+}
+
+.link-3:hover{
+    border: 2px solid var(--green);
+    color: var(--green);
 }
